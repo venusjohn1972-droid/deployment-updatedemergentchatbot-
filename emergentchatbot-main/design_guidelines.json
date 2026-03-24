@@ -1,0 +1,158 @@
+{
+  "project_name": "Dental Clinic Appointment & Chatbot App",
+  "theme": "light",
+  "typography": {
+    "font_family": {
+      "heading": "Outfit, sans-serif",
+      "body": "DM Sans, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight",
+      "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+      "h3": "text-2xl font-semibold",
+      "body_lg": "text-lg leading-relaxed",
+      "body_base": "text-base leading-relaxed",
+      "caption": "text-sm text-muted-foreground"
+    },
+    "imports": [
+      "@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Outfit:wght@300;400;600;700&display=swap');"
+    ]
+  },
+  "colors": {
+    "palette": {
+      "background": "#FAFAF9",
+      "foreground": "#334155",
+      "primary": {
+        "DEFAULT": "#3A8D91",
+        "foreground": "#FFFFFF",
+        "hover": "#2F7578"
+      },
+      "secondary": {
+        "DEFAULT": "#F0EFE9",
+        "foreground": "#1F2937"
+      },
+      "accent": {
+        "DEFAULT": "#FF8F7E",
+        "foreground": "#FFFFFF"
+      },
+      "muted": {
+        "DEFAULT": "#F1F5F9",
+        "foreground": "#64748B"
+      },
+      "card": {
+        "DEFAULT": "#FFFFFF",
+        "foreground": "#334155"
+      },
+      "border": "#E2E8F0",
+      "input": "#E2E8F0"
+    },
+    "gradients": {
+      "hero": "bg-gradient-to-br from-[#FAFAF9] via-[#E6F4F1] to-[#FAFAF9]",
+      "card_hover": "bg-gradient-to-t from-white to-[#F8FAFC]"
+    },
+    "utility": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#3B82F6"
+    }
+  },
+  "layout": {
+    "spacing": {
+      "container_padding": "p-6 md:p-12 lg:p-16",
+      "section_gap": "gap-8 md:gap-12",
+      "component_gap": "gap-4 md:gap-6"
+    },
+    "grid": {
+      "dashboard": "grid grid-cols-1 lg:grid-cols-12 gap-6 h-screen overflow-hidden",
+      "services": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+    },
+    "container": {
+      "max_width": "max-w-7xl mx-auto"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-3 font-medium transition-all duration-200 active:scale-95 shadow-sm hover:shadow-md",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-full px-6 py-2 font-medium transition-all duration-200",
+      "ghost": "hover:bg-muted text-foreground rounded-lg px-4 py-2 transition-colors duration-200"
+    },
+    "cards": {
+      "base": "bg-white rounded-2xl border border-border/60 shadow-sm hover:shadow-md transition-all duration-300 p-6",
+      "service": "group relative overflow-hidden bg-white rounded-3xl border border-border/50 p-8 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
+    },
+    "inputs": {
+      "base": "flex h-12 w-full rounded-xl border border-input bg-white px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/20 disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200"
+    },
+    "chatbot": {
+      "container": "flex flex-col h-full bg-white/50 backdrop-blur-xl border-r border-border/40",
+      "bubble_bot": "bg-secondary text-secondary-foreground rounded-2xl rounded-tl-sm px-4 py-3 max-w-[85%] text-sm shadow-sm",
+      "bubble_user": "bg-primary text-primary-foreground rounded-2xl rounded-tr-sm px-4 py-3 max-w-[85%] ml-auto text-sm shadow-sm"
+    }
+  },
+  "visual_enhancers": {
+    "radius": {
+      "default": "rounded-lg",
+      "large": "rounded-2xl",
+      "full": "rounded-full"
+    },
+    "shadows": {
+      "soft": "shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)]",
+      "glow": "shadow-[0_0_15px_rgba(58,141,145,0.2)]"
+    },
+    "glass": {
+      "panel": "bg-white/70 backdrop-blur-lg border border-white/20"
+    }
+  },
+  "motion": {
+    "transitions": {
+      "default": "transition-all duration-200 ease-in-out",
+      "slow": "transition-all duration-500 ease-out"
+    },
+    "keyframes": {
+      "fadeIn": "animate-in fade-in duration-500",
+      "slideUp": "animate-in slide-in-from-bottom-4 duration-500",
+      "slideInRight": "animate-in slide-in-from-right-4 duration-300"
+    }
+  },
+  "accessibility": {
+    "focus_ring": "focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary",
+    "contrast_check": "Ensure text is slate-800 or darker on light backgrounds. Use slate-500 for secondary text.",
+    "aria_labels": "All interactive elements must have aria-label if text is not descriptive."
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "clinic_interior_1": "https://images.unsplash.com/photo-1629909613638-0e4a1fad8f81?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "clinic_interior_2": "https://images.unsplash.com/photo-1642844819197-5f5f21b89ff8?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "dentist_smiling": "https://images.unsplash.com/photo-1675526607070-f5cbd71dde92?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "patient_interaction": "https://images.unsplash.com/photo-1758205308181-d52b41e00cef?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "logo_placeholder": "https://images.unsplash.com/photo-1628760584600-6c31148991e9?crop=entropy&cs=srgb&fm=jpg&q=85"
+    },
+    "icons_library": "lucide-react"
+  },
+  "instructions_to_main_agent": [
+    "Use 'Outfit' font for all headings to establish a friendly, modern brand.",
+    "Use 'DM Sans' for body text to ensure high readability and a human touch.",
+    "Implement the Two-Column Dashboard: Left Sidebar (30-35% width) for Chatbot, Right Panel (65-70%) for Booking/Appointments.",
+    "The Chatbot should feel like a 'Virtual Concierge' - warm, helpful, not robotic.",
+    "Use the 'Soft Teal' (#3A8D91) sparingly for primary actions and accents. Do not overuse it for backgrounds.",
+    "Service Selection should use the 'Bento' grid layout with 'Service Cards' that lift slightly on hover.",
+    "Ensure the 'Booking Form' is clean and step-based or clear sections to reduce cognitive load.",
+    "IMPORTANT: Add 'data-testid' to ALL interactive elements (buttons, inputs, cards) for testing.",
+    "Use 'sonner' for toast notifications.",
+    "Use Shadcn UI components but override styles to match the 'rounded-xl' and 'soft shadow' aesthetic.",
+    "For the Auth Screen, use a split layout: Left side engaging image/branding, Right side clean form."
+  ],
+  "universal_guidelines": [
+    "Do not use generic centered layouts.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) for overlays.",
+    "Every interaction needs micro-animations - hover states, transitions.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Never use AI assistant Emoji characters like 🤖 etc.",
+    "Use 'sonner' for toasts.",
+    "Components MUST use named exports."
+  ]
+}
